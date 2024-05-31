@@ -270,8 +270,70 @@ header nav .nav-menu .nav-btn {
   font-size: 30px;
   text-transform: uppercase;
 }
-
 /* Experience Section Code End */
+
+/* Awards Section Code Start */
+#awards-container {
+  width: 65%;
+  margin: 100px auto;
+}
+.award-title {
+  width: 50%;
+  margin: 0 auto;
+}
+.awards-parent-div .awards-title h2 {
+  text-align: center;
+  font-family: Rubik;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 1.5%;
+  color: #ffffff;
+}
+.award-title {
+  text-align: center;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 3%;
+  color: gray;
+}
+
+.mobile-app-div,
+.website-div {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  margin: 30px;
+}
+.app-child-div,
+.web-child-div {
+  width: 75%;
+  padding: 40px 100px 40px 20px;
+}
+.mobile-app-div h3,
+.website-div h3 {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.mobile-app-div p,
+.website-div p {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 15px;
+}
+.mobile-app-div h4,
+.website-div h4 {
+  padding-top: 28px;
+  padding-right: 17px;
+  font-family: Rubik;
+  font-weight: 400;
+}
+/* Awards Section Code End */
 
 /* Responsive Design Code Section  */
 @media screen and (min-width: 300px) and (max-width: 700px) {
@@ -364,7 +426,7 @@ header nav .nav-menu .nav-btn {
   }
   /* Banner section Code End */
   /* Experience Section Code Start  */
-  experience-container {
+  #experience-container {
     width: 100%;
   }
   .experience-parent-div {
@@ -384,6 +446,53 @@ header nav .nav-menu .nav-btn {
     padding-top: 50px;
   }
   /* Experience Section Code Start  */
+  /* Awards Section Code Start */
+  #awards-container {
+    width: 75%;
+    margin: 100px auto;
+  }
+  .award-title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .awards-parent-div .awards-title h2 {
+    text-align: center;
+    font-family: Rubik;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 1.5%;
+    color: #ffffff;
+  }
+
+  .mobile-app-div,
+  .website-div {
+    display: block;
+    width: 100%;
+  }
+  .app-child-div,
+  .web-child-div {
+    margin: 0;
+    padding: 50px 10px;
+    width: 100%;
+  }
+  .mobile-app-div h3,
+  .website-div h3 {
+    text-align: center;
+  }
+  .mobile-app-div p,
+  .website-div p {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+  .mobile-app-div h4,
+  .website-div h4 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  /* Awards Section Code End */
 }
 
 @media screen and (min-width: 700px) and (max-width: 1150px) {
@@ -411,4 +520,3 @@ header nav .nav-menu .nav-btn {
   }
   /* Banner section Code End */
 }
-/* Header Section Code end */
