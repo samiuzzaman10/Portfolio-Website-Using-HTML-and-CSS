@@ -335,6 +335,110 @@ header nav .nav-menu .nav-btn {
 }
 /* Awards Section Code End */
 
+/* Portfolio Section Code Start */
+#portfolio-container {
+  padding: 100px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.portfolio-title {
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio-title h2 {
+  font-family: Rubik;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47.4px;
+  letter-spacing: 1.5%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.portfolio-title p {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.3px;
+  letter-spacing: 3%;
+  color: #ffffff80;
+  margin-bottom: 15px;
+}
+.project-menu ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.project-menu ul li {
+  list-style: none;
+  background-color: black;
+  padding: 10px 20px 10px 10px;
+  margin-right: 10px;
+  border: 0.4px solid black;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 3%;
+  text-align: center;
+  box-shadow: 4px 4px 8px black;
+}
+.project-menu ul li:nth-child(2) {
+  background-color: #fd6f00;
+}
+.project-menu ul li:hover {
+  background-color: #333333;
+}
+.portfolio-project,
+.portfolio-project {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  width: 67%;
+  margin: 0 auto;
+}
+.portfolio-project-images img {
+  width: 355px;
+  height: 270px;
+}
+.portfolio-project h5 {
+  font-family: Rubik;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  padding: 5px 10px 10px 0;
+}
+.portfolio-project h2 {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.portfolio-project p {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.33px;
+  letter-spacing: 3%;
+  color: #ffffff80;
+}
+.project-details-one {
+  margin-left: 50px;
+  padding-right: 60px;
+}
+.project-details-two {
+  margin-right: 50px;
+  padding-right: 60px;
+}
+
+/* Portfolio Section Code End */
+
 /* Responsive Design Code Section  */
 @media screen and (min-width: 300px) and (max-width: 700px) {
   /* Navbar Code Start */
@@ -493,6 +597,54 @@ header nav .nav-menu .nav-btn {
     padding-bottom: 20px;
   }
   /* Awards Section Code End */
+  /* Portfolio Section Code Start */
+  .portfolio-project,
+  .portfolio-project {
+    display: block;
+    padding-top: 100px;
+    width: 100%;
+  }
+  .portfolio-project-images img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .portfolio-project h5 {
+    font-family: Rubik;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    padding: 5px 10px 10px 0;
+  }
+  .portfolio-project h2 {
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  .portfolio-project p {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.33px;
+    letter-spacing: 3%;
+    color: #ffffff80;
+  }
+  .project-details-one {
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-top: 50px;
+  }
+  .project-details-two {
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  /* Portfolio Section Code End */
 }
 
 @media screen and (min-width: 700px) and (max-width: 1150px) {
