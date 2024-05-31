@@ -6,17 +6,22 @@
 }
 /* Reset Code End */
 /* Header Section Code Start */
+body {
+  background-color: #1e1e1e;
+}
 header {
   width: 100%;
   height: 100vh;
-  background-color: #1e1e1e;
 }
 header nav {
+  margin-top: 50px;
+  padding: 10px 15px;
   width: 85%;
   display: flex;
   justify-content: space-between;
-  margin: 0px auto;
-  padding: 50px;
+  margin: 50px auto;
+  /* padding: 50px; */
+  box-shadow: 4px 5px 10px 2px;
 }
 header nav .nav-logo h3 {
   font-family: Poppins;
@@ -47,6 +52,10 @@ header nav .nav-menu ul li {
   letter-spacing: 0.03em;
   text-align: left;
 }
+header nav .nav-menu ul li:hover {
+  color: #fd6f00;
+}
+
 header nav .nav-menu .nav-btn {
   background-color: #fd6f00;
   color: white;
@@ -59,21 +68,151 @@ header nav .nav-menu .nav-btn {
 }
 /* Header Section Code End */
 
+/* Banner Section Code Start */
+#banner-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner-details {
+  width: 40%;
+}
+.banner-details h1 {
+  color: white;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: justify;
+}
+.banner-details h3 {
+  font-family: Rubik;
+  margin-top: 15px;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+}
+.banner-details p {
+  font-family: Rubik;
+  text-align: justify;
+  margin-top: 15px;
+  color: gray;
+  font-size: 15px;
+}
+.banner-details .banner-btn {
+  display: inline-block;
+  background-color: #333333;
+  border: 2px solid #6b6b6b;
+  border-radius: 50px;
+  padding: 5px;
+  margin-top: 20px;
+}
+.banner-details .banner-btn :nth-child(1) {
+  background-color: #fd6f00;
+  color: white;
+  border-radius: 60px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  font-family: Rubik;
+  font-weight: 400;
+}
+.banner-details .banner-btn :nth-child(2) {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 20px;
+  font-family: Rubik;
+  font-weight: 400;
+}
+#banner-container .banner-images img {
+  width: 400px;
+  height: 400px;
+  top: 177px;
+  left: 759px;
+  border: 2px solid #fe8132;
+  border-radius: 50%;
+}
 
+.banner-social-icon {
+  margin-top: 20px;
+}
+.banner-social-icon a {
+  text-decoration: none;
+  color: #8e8e8e;
+  margin-right: 10px;
+}
+.banner-social-icon a i {
+  background-color: #1e1e1e;
+  font-size: 25px;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
 
+#heading-line h3 {
+  width: 99.9%;
+  height: 100px;
+  align-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 32px;
+  transform: rotate(-5deg);
+  text-wrap: nowrap;
+}
 
-
-
-
-
-
-
-
+#Banner-About-section {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  font-family: Rubik;
+  padding-bottom: 100px;
+}
+#Banner-About-section .about {
+  margin-right: 100px;
+  width: 50%;
+  padding-right: 10%;
+}
+#Banner-About-section .about h2 {
+  color: #ffffff;
+  font-family: Rubik;
+  font-weight: 800;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+#Banner-About-section div p {
+  color: gray;
+  font-family: Rubik;
+}
+#Benner-Rating-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+#Benner-Rating-section h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 47px;
+}
+#Benner-Rating-section h4 {
+  color: white;
+  font-weight: 400;
+}
+.Five-star-rating {
+  color: #e17836;
+  margin-bottom: 10px;
+}
+/* #Benner-Rating-section h4{
+  color: white;
+  text-align: ;
+} */
+/* Banner Section Code Ends */
 
 /* Responsive Design Code Section  */
-/* Header Section Code Start */
 @media screen and (min-width: 300px) and (max-width: 700px) {
-    /* Navbar Code Start */
+  /* Navbar Code Start */
   header nav {
     display: block;
   }
@@ -92,8 +231,77 @@ header nav .nav-menu .nav-btn {
   header nav .nav-menu ul li {
     text-align: center;
   }
+  /* Navbar Code End */
+  /* Banner section Code Start */
+  #banner-container {
+    display: block;
+  }
+  .banner-details {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #banner-container .banner-images {
+    margin-top: 100px;
+    margin-left: 25px;
+  }
+  #banner-container .banner-images img {
+    width: 300px;
+    height: 300px;
+    top: 177px;
+    left: 759px;
+    border: 2px solid #fe8132;
+    border-radius: 50%;
+  }
+
+  #heading-line {
+    display: none;
+  }
+
+  .banner-social-icon {
+    text-align: left;
+  }
+
+  #Banner-About-section {
+    display: block;
+  }
+  #Banner-About-section .about {
+    width: 100%;
+    margin: 40px 15px;
+    text-align: center;
+  }
+  #Banner-About-section .about h2 {
+    color: #ffffff;
+    font-family: Rubik;
+    font-weight: 800;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  #Banner-About-section div p {
+    color: gray;
+    font-family: Rubik;
+  }
+  #Benner-Rating-section {
+    text-align: center;
+  }
+  #Benner-Rating-section h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 47px;
+  }
+  #Benner-Rating-section h4 {
+    color: white;
+    font-weight: 400;
+  }
+  .Five-star-rating {
+    color: #e17836;
+    margin-bottom: 10px;
+  }
+  /* Banner section Code End */
 }
+
 @media screen and (min-width: 700px) and (max-width: 1150px) {
+  /* Navbar Code Start */
   header nav {
     display: flex;
   }
@@ -108,8 +316,13 @@ header nav .nav-menu .nav-btn {
     text-align: center;
   }
   /* Navbar Code End */
-
-  /* Banner Section Code Start */
-  /* Banner Section Code End */
+  /* Banner section Code Start */
+  #Banner-About-section {
+    margin: 0 30px;
+  }
+  #Banner-About-section {
+    margin-top: 100px;
+  }
+  /* Banner section Code End */
 }
 /* Header Section Code end */
