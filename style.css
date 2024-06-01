@@ -536,6 +536,72 @@ input[type="file"] {
 }
 /* Contact Section Code End */
 
+/* Footer Section Code Start */
+#footer-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000000;
+  padding-top: 100px;
+}
+.footer-log {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.footer-log h3 {
+  color: #fd6f00;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 3%;
+}
+.footer-menu-bar {
+  width: 50%;
+  margin: 0 auto;
+}
+.footer-menu-bar ul {
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-menu-bar ul li {
+  list-style: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 31.5px;
+  letter-spacing: 3%;
+}
+.footer-social-media {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.footer-social-media a i {
+  color: #ffffff;
+  margin-right: 20px;
+}
+.copyright-section {
+  color: white;
+  height: 80px;
+  background-color: #121212;
+}
+.copyright-section p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 3%;
+  text-align: center;
+  padding-top: 27px;
+}
+.copyright-section p span {
+  color: #fd6f00;
+  font-weight: 700;
+}
+
+/* Footer Section Code Start */
+
 /* Responsive Design Code Section  */
 @media screen and (min-width: 300px) and (max-width: 700px) {
   /* Navbar Code Start */
@@ -598,32 +664,9 @@ input[type="file"] {
     margin: 40px 15px;
     text-align: center;
   }
-  #Banner-About-section .about h2 {
-    color: #ffffff;
-    font-family: Rubik;
-    font-weight: 800;
-    font-size: 40px;
-    padding-bottom: 10px;
-  }
-  #Banner-About-section div p {
-    color: gray;
-    font-family: Rubik;
-  }
+
   #Benner-Rating-section {
     text-align: center;
-  }
-  #Benner-Rating-section h2 {
-    color: white;
-    font-weight: 700;
-    font-size: 47px;
-  }
-  #Benner-Rating-section h4 {
-    color: white;
-    font-weight: 400;
-  }
-  .Five-star-rating {
-    color: #e17836;
-    margin-bottom: 10px;
   }
   /* Banner section Code End */
   /* Experience Section Code Start  */
@@ -769,6 +812,28 @@ input[type="file"] {
     width: 100%;
   }
   /* Contact Section Code End */
+  /* Footer Section Code Start */
+#footer-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer-menu-bar {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-menu-bar ul {
+  display: block;
+  text-align: center;
+}
+
+.copyright-section p {
+  text-wrap: wrap;
+}
+.copyright-section p span {
+  font-weight: 400;
+}
+
+/* Footer Section Code Start */
 }
 
 @media screen and (min-width: 700px) and (max-width: 1150px) {
@@ -794,5 +859,226 @@ input[type="file"] {
   #Banner-About-section {
     margin-top: 100px;
   }
+  /* Banner section Code Start */
+  #banner-container {
+    display: block;
+  }
+  #banner-container h1, #banner-container p{
+    text-align: center;
+  }
+  .banner-social-icon a i{
+  }
+  .banner-details {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .banner-images {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+   display: grid;
+   justify-items: center;
+    margin-top: 100px;
+  }
+  #banner-container .banner-images img {
+    width: 300px;
+    height: 300px;
+    top: 177px;
+    left: 759px;
+    border: 2px solid #fe8132;
+    border-radius: 50%;
+  }
+
+  #heading-line {
+    display: none;
+  }
+
+  .banner-social-icon {
+    text-align: left;
+  }
+
+  #Banner-About-section {
+    display: block;
+  }
+  #Banner-About-section .about {
+    width: 100%;
+    margin: 40px 15px;
+    text-align: center;
+  }
+
+  #Benner-Rating-section {
+    text-align: center;
+  }
   /* Banner section Code End */
+  /* Experience Section Code Start  */
+  #experience-container {
+    width: 100%;
+  }
+  .experience-parent-div {
+    display: block;
+    width: 100%;
+  }
+
+  .experience-title {
+    width: 65%;
+    text-align: center;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .experience-details {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  /* Experience Section Code Start  */
+  /* Awards Section Code Start */
+  #awards-container {
+    width: 75%;
+    margin: 100px auto;
+  }
+  .award-title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .awards-parent-div .awards-title h2 {
+    text-align: center;
+    font-family: Rubik;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 1.5%;
+    color: #ffffff;
+  }
+
+  .mobile-app-div,
+  .website-div {
+    display: block;
+    width: 100%;
+  }
+  .app-child-div,
+  .web-child-div {
+    margin: 0;
+    padding: 50px 10px;
+    width: 100%;
+  }
+  .mobile-app-div h3,
+  .website-div h3 {
+    text-align: center;
+  }
+  .mobile-app-div p,
+  .website-div p {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+  .mobile-app-div h4,
+  .website-div h4 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  /* Awards Section Code End */
+  /* Portfolio Section Code Start */
+
+  #portfolio-container {
+    padding: 100px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .portfolio-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .portfolio-project,
+  .portfolio-project {
+    display: block;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .portfolio-project-images img {
+    width: 60%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .portfolio-project h5 {
+    font-family: Rubik;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    padding: 5px 10px 10px 0;
+  }
+  .portfolio-project h2 {
+    font-size: 30px;
+  }
+  .project-details-one {
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-top: 50px;
+  }
+  .project-details-two {
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .project-menu ul li {
+    width: 150px;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+  }
+
+  /* Portfolio Section Code End */
+  /* Contact Section Code Start */
+  #contact-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-sectioin {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 80px;
+  }
+  .contact-sectioin input:focus {
+    border: none;
+    color: white;
+  }
+  .input-name-email {
+    width: 100%;
+  }
+  .input-messege {
+    width: 100%;
+  }
+  /* Contact Section Code End */
+  /* Footer Section Code Start */
+#footer-container {
+  width: 100%;
+  margin: 0 auto;
 }
+.footer-menu-bar {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-menu-bar ul {
+  display: block;
+  text-align: center;
+}
+
+.copyright-section p {
+  text-wrap: wrap;
+}
+.copyright-section p span {
+  font-weight: 400;
+}
+
+/* Footer Section Code Start */
+}
+
